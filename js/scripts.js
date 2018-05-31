@@ -1,17 +1,19 @@
-/* it allows you to speak with somone */
-$(document).ready(function(){
-$("button#first_question").click(function(){
-$("ul#you").prepend("<li>hello</li>");
-});
+    $(document).ready(function() {
+    $("form#Info").submit(function(event){
+    var animalInput = $("input#animal").val();
+    var musicInput = $("input#music").val();
+    var foodInput = $("input#food").val();
+    var placesInput = $("input#places").val();
 
-$("button#second_question").click(function(){
-  $("ul#me").prepend("<li>how are your doing this fine day</li>");
 
+
+    $(".animal").text(animalInput);
+    $(".music").text(musicInput);
+    $(".food").text(foodInput);
+    $(".places").text(placesInput);
+
+
+    $("#list").show();
+    event.preventDefault();
+  });
 });
-});
-/* you ca change the back ground
-$("ul#header").click(function(){
-$  ('body').css('background-color', 'green');
-$  ('body').toggle('background-color', 'none');
-});
-*//

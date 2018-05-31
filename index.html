@@ -6,47 +6,45 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
-  <meta charset="utf-8">
-  <title>project</title>
+  <title>Form</title>
 </head>
 
 <body>
   <div class="container">
-    <div class="jumbotron">
-    <h1>Talk to the web page</h1>
-    <ul id="header">click me</ul>
-  </div>
+
+
+
+        <form id="Info">
+        <div class="form-group">
+          <label for="animal">Name</label>
+          <input id="animal" type="text" class="form-control"  placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <label for="music">music</label>
+          <input id="music"type="text" class="form-control" placeholder="Favorite music">
+        </div>
+        <div class="form-group">
+          <label for="food">food</label>
+          <input id="food" type="text" class="form-control"  placeholder="Fvorite foods">
+        </div>
+        <div class="form-group">
+          <label for="places">places</label>
+          <input id="places" type="text" class="form-control"  placeholder="Favorite places">
+        </div>
+        <button type="submit" class=".btn-primary">Show me the story!</button>
+
+      </form>
+
+      <div id="list">
+        <h2> Your Info </h2>
+        <ul>
+          <li><span class="animal"></span></li>
+          <li><span class="music"></span></li>
+          <li><span class="food"></span></li>
+          <li><span class="places"></span></li>
+        </ul>
 </div>
-
-
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md-6 text-center">
-
-    <button class="btn btn-primary" id="first_question">start</button>
-  </div>
-    <div class="col-md-6 text-center">
-    <button class="btn btn-primary" id="second_question">continue</button>
-  </div>
-
-
-
-
-      <div class="col-md-6 text-center">
-        <h2>Brian:</h2>
-        <ul id="you">
-        </ul>
-      </div>
-
-      <div class="col-md-6 text-center">
-
-        <h2>Friend:</h2>
-        <ul id="me">
-        </ul>
-
-    </div>
-    </row>
 </div>
 </body>
 </html>
+<!DOCTYPE html>
